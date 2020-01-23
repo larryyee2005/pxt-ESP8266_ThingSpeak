@@ -1,6 +1,6 @@
 ESP8266_ThingSpeak.initialize_wifi(
-SerialPin.P0,
-SerialPin.P1,
+SerialPin.P8,
+SerialPin.P16,
 BaudRate.BaudRate115200,
 "your_ssid",
 "your_pw"
