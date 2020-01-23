@@ -1,7 +1,7 @@
 /**
- * MakeCode extension for ESP8266 Wifi modules and ThinkSpeak website https://thingspeak.com/
+ * MakeCode extension for ESP01 Wifi modules and ThinkSpeak website https://thingspeak.com/
  */
-//% color=#009b5b icon="\uf1eb" block="ESP8266 ThingSpeak"
+//% color=#009b5b icon="\uf1eb" block="ESP01 ThingSpeak"
 namespace ESP8266ThingSpeak {
 
     let wifi_connected: boolean = false
@@ -37,8 +37,8 @@ namespace ESP8266ThingSpeak {
     * Initialize ESP8266 module and connect it to Wifi router
     */
     //% block="Initialize ESP8266|RX (Tx of micro:bit) %tx|TX (Rx of micro:bit) %rx|Baud rate %baudrate|Wifi SSID = %ssid|Wifi PW = %pw"
-    //% tx.defl=SerialPin.P0
-    //% rx.defl=SerialPin.P1
+    //% tx.defl=SerialPin.P8
+    //% rx.defl=SerialPin.P16
     //% ssid.defl=your_ssid
     //% pw.defl=your_pw
     export function connectWifi(tx: SerialPin, rx: SerialPin, baudrate: BaudRate, ssid: string, pw: string) {
